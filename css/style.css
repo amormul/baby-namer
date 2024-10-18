@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Загальний стиль */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Заголовок */
+header {
+    background-color: #6ec1e4;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Основний блок */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Форма */
+.name-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.name-form input, .name-form select, .name-form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.name-form button {
+    background-color: #6ec1e4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.name-form button:hover {
+    background-color: #5ca1c0;
+}
+
+/* Повідомлення про помилку */
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Контейнер для списків імен */
+.names-container {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.column {
+    width: 40%;
+}
+
+.column h2 {
+    text-align: center;
+    color: #444;
+}
+
+/* Оформлення для хлопчиків */
+.column.boys ul {
+    background-color: #d0e7ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.column.boys li {
+    background-color: #a4cafe;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+/* Оформлення для дівчаток */
+.column.girls ul {
+    background-color: #ffe0f0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.column.girls li {
+    background-color: #f8a3c9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+/* Футер */
+footer {
+    background-color: #6ec1e4;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
